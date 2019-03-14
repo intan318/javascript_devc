@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
+    <script>
+    var angka1 = parseInt(prompt('Input angka pertama'));
+    var angka2 = parseInt(prompt('Input angka kedua'));
+    var opmat = prompt('Input operasi matematika ( + - * / ^ min max');
+    var hasil;
+
+    if (opmat == '+'){
+        hasil = angka1 + angka2;
+        alert(hasil);
+    } else if (opmat == '-'){
+        hasil = angka1 - angka2;
+        alert(hasil);
+    } else if (opmat == '*') {
+        hasil = angka1 * angka2;
+        alert(hasil);
+    } else if (opmat == '/'){
+        hasil = angka1/angka2;
+        alert(hasil);
+    } else if (opmat == '^'){
+        hasil = Math.pow(angka1, angka2);
+        alert(hasil);
+    } else if (opmat == 'min'){
+        hasil = Math.min(angka1, angka2);
+        alert(hasil);
+    } else if (opmat == 'max'){
+        hasil = Math.max(angka1, angka2);
+        alert(hasil);
+    } 
+
+    </script>
+</body>
+</html>
